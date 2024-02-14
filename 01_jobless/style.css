@@ -83,6 +83,10 @@ nav .sign-up {
   color: #001aff;
 }
 
+.featured {
+  margin-bottom: 80px;
+}
+
 .featured > h3 {
   font-size: 16px;
   margin: 0 0 16px 0;
