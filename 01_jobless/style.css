@@ -1,0 +1,161 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f6faff;
+  line-height: 1.5;
+  background-image: linear-gradient(
+    to right,
+    rgba(5, 0, 255, 0.1),
+    rgba(248, 251, 118, 0.1),
+    rgba(78, 255, 117, 0.1),
+    rgba(0, 255, 209, 0.1)
+  );
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+nav {
+  margin-top: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+nav .menu {
+  display: flex;
+  gap: 50px;
+}
+
+nav .menu-item {
+  color: #000;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+nav .menu-item-active {
+  opacity: 1;
+  font-weight: 600;
+}
+
+nav .sign-up {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px 25px;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero {
+  padding: 135px 0;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.hero .hero-headline {
+  margin-bottom: 16px;
+}
+
+.hero .hero-subheadline {
+  margin-bottom: 48px;
+}
+
+.hero .cta-primary {
+  display: inline-block;
+  font-weight: 600;
+  color: white;
+  background-color: #001aff;
+  padding: 12px 16px;
+  border-radius: 100px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.hero .cta-secondary {
+  margin-left: 10px;
+  font-weight: 600;
+  color: #001aff;
+}
+
+.featured > h3 {
+  font-size: 16px;
+  margin: 0 0 16px 0;
+}
+
+.jobs-list {
+  display: flex;
+  gap: 30px;
+}
+
+.job-card {
+  width: calc(100% / 3);
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0px 30px 60px rgba(0, 26, 255, 0.1);
+}
+
+.job-card:hover {
+  background-color: #001aff;
+  color: white;
+}
+
+.job-card:hover .job-tag {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.job-header {
+  width: 100%;
+  display: flex;
+}
+
+.job-logo {
+  height: 50px;
+  width: 50px;
+}
+
+.job-meta {
+  margin-left: 12px;
+}
+
+.job-title {
+  font-size: 18px;
+  margin: 0;
+}
+
+.job-company {
+  font-size: 14px;
+  margin: 0;
+}
+
+.job-card hr {
+  margin: 20px 0;
+  border: none;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.job-salary {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.job-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-tag {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 15px;
+  border-radius: 100px;
+  background-color: rgba(0, 0, 0, 0.07);
+}

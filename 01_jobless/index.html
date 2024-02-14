@@ -4,17 +4,110 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="brand"></div>
-      <div class="menu">
-        <a href="#" class="menu-item">Home</a>
-        <a href="#" class="menu-item">Discover</a>
-        <a href="#" class="menu-item">Post A Job</a>
-        <a href="#" class="menu-item">Contact Us</a>
+    <div class="container">
+      <nav>
+        <div class="nav-brand">Jobless</div>
+        <div class="menu">
+          <a href="#" class="menu-item menu-item-active">Home</a>
+          <a href="#" class="menu-item">Discover</a>
+          <a href="#" class="menu-item">Post A Job</a>
+          <a href="#" class="menu-item">Contact Us</a>
+        </div>
+        <a href="#" class="sign-up">Sign Up</a>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="hero">
+        <h1 class="hero-headline">
+          Get Connected to the Best Remote<br />Jobs in Your Field
+        </h1>
+        <p class="hero-subheadline">
+          Discover a wide range of remote opportunities on our platform and
+          <br />take control of your career
+        </p>
+        <div class="hero-cta">
+          <a href="#" class="cta-primary">Explore Remote Jobs</a>
+          <a href="" class="cta-secondary">How it works?</a>
+        </div>
       </div>
-    </nav>
+    </div>
+    <div class="container">
+      <div class="featured">
+        <h3>Featured Jobs</h3>
+        <div class="jobs-list">
+          <div class="job-card">
+            <div class="job-header">
+              <img class="job-logo" src="images/figma-logo.png" />
+              <div class="job-meta">
+                <h3 class="job-title">Front-End Developer</h3>
+                <p class="job-company">Figma</p>
+              </div>
+            </div>
+            <p class="job-description">
+              We are looking for an experienced front-end developer to join our
+              team.
+            </p>
+            <hr />
+            <div class="job-footer">
+              <div class="job-tags">
+                <span class="job-tag">Rust</span>
+              </div>
+              <div class="job-salary">$70,000 - $90,000</div>
+            </div>
+          </div>
+          <div class="job-card">
+            <div class="job-header">
+              <img class="job-logo" src="images/facebook-logo.png" />
+              <div class="job-meta">
+                <h3 class="job-title">Data Scientist</h3>
+                <p class="job-company">Facebook</p>
+              </div>
+            </div>
+            <p class="job-description">
+              We are seeking a data scientist to join our team.
+            </p>
+            <hr />
+            <div class="job-footer">
+              <div class="job-tags">
+                <span class="job-tag">Python</span>
+              </div>
+              <div class="job-salary">$100,000 - $130,000</div>
+            </div>
+          </div>
+          <div class="job-card">
+            <div class="job-header">
+              <img class="job-logo" src="images/vercel-logo.png" />
+              <div class="job-meta">
+                <h3 class="job-title">Technical Writer</h3>
+                <p class="job-company">Vercel</p>
+              </div>
+            </div>
+            <p class="job-description">
+              We are seeking a technical writer to join our team.
+            </p>
+            <hr />
+            <div class="job-footer">
+              <div class="job-tags">
+                <span class="job-tag">Documentation</span>
+              </div>
+              <div class="job-salary">$60,000 - $80,000</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
