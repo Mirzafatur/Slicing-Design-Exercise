@@ -1,0 +1,80 @@
+<!-- https://codedesign.dev/challenge/comments -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Source Sans 3 font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Line Icon -->
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Comments</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Comments</h2>
+      <div class="comment-container selected">
+        <div class="user-info">
+          <img
+            src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww"
+            alt="photo"
+            class="user-avatar"
+          />
+          <p class="user-name">Jhon Doe</p>
+        </div>
+        <p class="comment">
+          I just tried this recipe and it was amazing! The instructions were
+          clear and easy to follow, and the end result was delicious. I will
+          definitely be making this again. Thanks for sharing!
+        </p>
+        <div class="divider"></div>
+        <div class="comment-action">
+          <div class="comment-icon">
+            <i class="lni lni-bold"></i>
+            <i class="lni lni-italic"></i>
+            <i class="lni lni-link"></i>
+          </div>
+          <button class="cta-button">Comment</button>
+        </div>
+      </div>
+      <div class="comment-container">
+        <div class="user-info">
+          <img
+            src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YXZhdGFyfGVufDB8fDB8fHww"
+            alt="photo"
+            class="user-avatar"
+          />
+          <p class="user-name">Angelica Doe</p>
+        </div>
+        <p class="comment">
+          I really appreciate the insights and perspective shared in this
+          article. It's definitely given me something to think about and has
+          helped me see things from a different angle. Thank you for writing and
+          sharing!
+        </p>
+        <div class="comment-action-vote">
+          <div class="comment-icon">
+            <div class="icon-container">
+              <i class="lni lni-arrow-up"></i>
+            </div>
+            <div class="icon-container">
+              <i class="lni lni-arrow-down"></i>
+            </div>
+          </div>
+          <p>5 min ago</p>
+        </div>
+      </div>
+      <button class="btn-load">Load More</button>
+    </div>
+  </body>
+</html>
