@@ -1,0 +1,41 @@
+:root {
+  --primaryColor: #db4b04;
+  --textPrimary: #121212;
+  --textSecondary: #727272;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--textPrimary);
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1290px;
+  margin: 0 auto;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.nav-items-container {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-items-container > a {
+  color: var(--textPrimary);
+  cursor: pointer;
+}
