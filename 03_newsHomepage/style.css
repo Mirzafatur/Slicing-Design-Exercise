@@ -1,5 +1,6 @@
 :root {
   --primaryColor: #db4b04;
+  --secondaryColor: #f2c900;
   --textPrimary: #121212;
   --textSecondary: #727272;
 }
@@ -16,10 +17,11 @@ body {
   font-family: "Inter", sans-serif;
   color: var(--textPrimary);
   padding: 40px 0;
+  line-height: 1.5;
 }
 
 .container {
-  max-width: 1290px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -38,4 +40,136 @@ body {
 .nav-items-container > a {
   color: var(--textPrimary);
   cursor: pointer;
+}
+
+.news-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  grid-auto-rows: auto;
+}
+
+.headline-images {
+  grid-column: 1/3;
+  grid-row: 1;
+  height: 100%;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.headline-images > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.headline-title {
+  grid-row: 2;
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.headline-description {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.news-1 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.news-2 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.news-3 {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.headline-description > p {
+  font-size: 14px;
+  color: var(--textSecondary);
+}
+
+.headline-description > button {
+  align-self: flex-start;
+  margin-top: 16px;
+  border: none;
+  font-weight: 600;
+  background-color: var(--primaryColor);
+  color: white;
+  padding: 12px 24px;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.headline-description > button:hover {
+  opacity: 0.8;
+}
+
+.new-news {
+  grid-column: 3;
+  grid-row: 1/3;
+  background-color: #140f30;
+  color: white;
+  padding: 16px 24px;
+}
+
+.new-news > h2 {
+  color: var(--secondaryColor);
+  font-size: 28px;
+  margin-bottom: 32px;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.news > p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.new-news .divider {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 20px 0;
+}
+
+.news-item {
+  display: flex;
+  gap: 16px;
+}
+
+.news-img {
+  width: 100%;
+  height: 200px;
+}
+
+.news-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-meta {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.news-meta > h1 {
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.2);
 }
